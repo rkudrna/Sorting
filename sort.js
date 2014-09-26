@@ -1,23 +1,26 @@
 $(function() {
+  
+//Fruit object class constructor
   function Fruit(name,gLoad,calories) {
     this.name = name;
     this.gLoad = gLoad;
     this.calories = calories;
     
     this.toHTML = function() {
-      return '<li class="fruit">' + 
+      return '<li><strong>' + 
       this.name + 
-      //'<br><em>GL: ' + this.gLoad + 
-      //'<br>cals: ' + this.calories + 
-      '<em></li>'
+      '</strong><br><em>GL: ' + this.gLoad + 
+      '<br>cals: ' + this.calories + 
+      '</em></li>'
     };
 
     this.addFruit = function() {
       $('#fruitList').append(this.toHTML());
     };
-    console.log(this.addFruit());
-  };
 
+    this.addFruit();
+  };
+//instantiate Fruit objects
   var apple = new Fruit('Apple',3,65);
   var pear = new Fruit('Pear',5,81);
   var banana = new Fruit('Banana',18,200);
@@ -28,18 +31,14 @@ $(function() {
   var cherry = new Fruit('Cherry',7,22);
   var grape = new Fruit('Grape',9,59);
 
-  console.log(grape);
+//create array of Fruit objects
+  var getFruit = $("li");
+  var fruitArray = $.makeArray(getFruit);
+  //var fruitArray = [apple, pear, banana, peach];
 
-  $('li').css({
-    'display': 'inline', 
-    'margin-right': '10px', 
-    'font-family': 'Verdana',
-    'font-size': '14pt',
-    'background-color': '#81DAF5',
-    'border': 'solid blue 1px',
-    'border-radius': '10px',
-    'padding': '5px',
-  })
+console.log(fruitArray);
+//
+
 
   $('button').click(function() {
     $('#fruitList').append("hello");
