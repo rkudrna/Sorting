@@ -1,0 +1,66 @@
+body {
+  background-color: #E0ECF8;
+  width: 960px;
+
+}
+
+header {
+  height: 70px;
+  width: 940px;
+  position: center;
+  text-align: center;
+  border: solid gray 1px;
+  background-color: #BCF5A9;
+}
+
+h1 {
+  font-family: Verdana, Arial;
+  font-size: 2em;
+}
+
+.sortBy {
+  border: solid gray 1px;
+  width: 400px;
+  height: 150px;
+  float: left;
+  margin: 10px;
+  background-color: white;
+  font-family: Verdana, Arial;
+  padding: 5px;
+}
+
+#glBox {
+  background-color: #F5A9A9;
+}
+
+#calBox {
+  background-color: #F7BE81;
+}
+
+button {
+  margin: 10px;
+}
+
+#main {
+  border: solid gray 1px;
+  height: 600px;
+  width: 940px;
+  position: absolute;
+  top: 100px;
+  background-color: #BCF5A9;
+}
+
+#table {
+  border: solid gray 1px;
+  width: 90%;
+  height: 250px;
+  margin: 10px;
+  position: absolute;
+  top: 200px;
+  background-color: #D7C8AE;
+}
+
+//not showing up
+.fruit {
+  border: solid gray .5px;
+}
