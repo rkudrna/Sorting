@@ -59,7 +59,7 @@ button:hover {
 
 #main {
   border: solid gray 1px;
-  height: 600px;
+  height: 430px;
   width: 940px;
   position: absolute;
   top: 100px;
@@ -69,11 +69,21 @@ button:hover {
 #table {
   border: solid gray 1px;
   width: 90%;
-  height: 250px;
+  height: 220px;
   margin: 10px;
   position: absolute;
-  top: 200px;
+  top: 180px;
   background-color: #D7C8AE;
+}
+
+footer {
+  border: solid gray 1px;
+  height: 75px;
+  width: 940px;
+  position: absolute;
+  top: 545px;
+  background-color: #BCF5A9;
+  text-align: center;
 }
 
 li {
